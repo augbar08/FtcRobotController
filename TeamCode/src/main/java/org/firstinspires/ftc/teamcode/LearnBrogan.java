@@ -13,6 +13,8 @@ public class LearnBrogan extends OpMode {
 
     @Override
     public void loop() {
-
+        if (gamepad1.left_stick_button) {
+            telemetry.addData("Left Stick", "Was pressed.");
+        }
     }
 }
